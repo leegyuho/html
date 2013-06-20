@@ -2,9 +2,9 @@
 
 <head>
 
-
+<!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+-->
 
 
 <style>
@@ -32,6 +32,7 @@ caption,th {
 }
 h1,h2,h3,h4,h5,h6 {
  font-weight:normal;
+ color:#660000;
 }
 q:before,q:after {
  content:'';
@@ -40,7 +41,7 @@ abbr,acronym { border:0;
 }
 <!-- -->
 
-div{ width:100%; border:1px gray dotted;}
+div{ width:100%; border:1px gray dotted; margin:2px; padding:2px;}
 
 div#ttl{
   background-color:#BBBBBB;
@@ -57,14 +58,33 @@ div#ctnt {
  overflow:hidden;
 }
 div#side{
- width:auto;
+ max-width:18%;
  border-color:red;
  position:fixed;
- left:80%;
- height:100%;
+ right:0%;
+ height:auto;
+ overflow:hidden;
 }
+
 div#ft {
  width:80%;
+ height:10%;
+}
+
+.empss{
+ font-weight:bold;
+ color:#660000;
+}
+a:link{ color:#cc8800;}
+a:visited{color:#660000;} 
+a:hover {color:#660000;}
+a:active {color:#660000;}
+
+ol.alpha_{
+ list-style-type:lower-alpha;
+}
+ol.number_{
+ list-style-type:upper-roman;
 }
 
 </style>
@@ -80,33 +100,58 @@ div#ft {
 <div id="wrp">
 
  <div id="ctnt">
-  <h2> welcome to this page. you will learn about html.</h2>
-
+  <h2 class="empss"> welcome to this page. you will learn about html.</h2>
+  <p>html에 대해서 설명하는 페이지로서, 이페이즈는 index.html페이지입니다.</p>
+  <p>우선 각 페이지마다 설정되는 기본 스타일을 적어놓으며, 후에 제대로된 메인페이지를 만들것입니다.</p>
+  <h3>스타일 적용</h3>
+  <p>
+  <pre>
+   폰트 종류 : .empss, a:link, base;
+    <label>.empss { color:#660000; font-weight:bold;}</label>
+    <label>a:link{ color:#660000;}</label>
+    <label>a:visited{color:#cc9900;}</label>
+    <label>a:hover {color:#cc9900;}</label>
+    <label>a:active {color:#cc9900;}</label>
+    <span class="empss">강조글</span>
+    <a href="www.google.com">google link</a>
+    
+    ol style:
+      ol.alpha_{
+       list-style-type:lower-alpha;
+      }
+      ol.number_{
+       list-style-type:upper-roman;
+      }
+    </pre>
+    
+  </p>
+  <p>
+    <span class="empss">reference</span>
+     <ul>
+      <li><a href="http://www.w3schools.com/">W3Scools Online Web Tutorials</a></li>
+      <li><a href="http://stackoverflow.com/">Stack Overflow</a></li>
+     </ul>
+  </p>
  </div>
 
  <div id="side">
-
-  <ul>
-   <li>1. html
-    <ul>
-     <li> a. history</li>
-     <li> b. kind of html, (javascript, css)</li>
-     <li> c. category</li>
-     <li> d. tags</li>
-     <li> </li>
-     <li> e. what is &lt;html&gt;</li>
-    </ul>
+ <h4>목차</h4>
+  <ol class="number_">
+   <li>html
+    <ol class="alpha_">
+     <li><a href="./html/index.html"> html 이란?</a></li>
+    </ol>
    </li>
-   
- 
-  </ul>
+   <li>css</li>
+   <li>javascript</li>
+  </ol>
 
  </div>
 
+ <div style="clear:both;visibility:hidden"></div>
+</div>
  <div id="ft">
  </div>
-
-</div>
 
 </body>
 
