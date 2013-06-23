@@ -1,0 +1,231 @@
+<html>
+
+<head>
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+-->
+<meta http-equiv="Content-Type" 
+
+content="text/html; charset=utf-8">
+
+<style>
+<!-- yui css 
+
+initialize -->
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+ margin:0;
+ padding:0;
+}
+table {
+ 
+
+border-collapse:collapse;
+ border-spacing:0;
+}
+fieldset,img {
+ border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+ font-
+
+style:normal;
+ font-weight:normal;
+}
+ol,ul {
+ list-style:none;
+}
+caption,th {
+ text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+ font-weight:normal;
+ 
+
+color:#660000;
+}
+q:before,q:after {
+ content:'';
+}
+abbr,acronym { border:0;
+}
+<!-- -->
+
+div{ width:100%; border:1px gray dotted; 
+
+margin:2px; 
+
+padding:2px;}
+
+div#ttl{
+  background-color:#BBBBBB;
+}
+
+div#wrp{
+ 
+}
+
+div#ctnt {
+ width:80%;
+ float:left;
+ border-color:green;
+ 
+
+overflow:hidden;
+}
+div#side{
+ max-width:18%;
+ border-color:red;
+ position:fixed;
+ right:0%;
+ height:auto;
+ overflow:hidden;
+}
+
+div#ft {
+ 
+
+width:80%;
+ height:10%;
+}
+
+.empss{
+ font-weight:bold;
+ color:#660000;
+}
+a:link{ color:#cc8800;}
+a:visited{color:#660000;} 
+a:hover 
+
+{color:#660000;}
+a:active {color:#660000;}
+
+ol.alpha_{
+ list-style-type:lower-alpha;
+}
+ol.number_{
+ list-style-type:upper-roman;
+}
+
+</style>
+</head>
+<body>
+
+<div id="ttl">
+
+ <h1> this is first page of this document.(fake title is Leanring html)</h1>
+ 
+ 
+</div>
+<div 
+
+id="wrp">
+
+ <div id="ctnt">
+  <h2 class="empss"> welcome to this page. you will learn about html.</h2>
+  <p>태그에 대해서 설명하는 페이지로서, 이페이지는 index.html페이지입니다.</p>
+    현재 계속 진행중에 있으며, html에 대한 전반적인 설명을 다루게됩니다.
+  </p>
+  
+  <h3>about tag</h3>
+  
+    태그
+  태그(Tag)에는 꼬리표라는 뜻을 가지며 다음과 같은 쓰임이 있다.
+  일반 용어[편집]
+
+태그는 원래 우편물이나 화물, 택배물 등에 붙여 화물의 분류나 송수신인, 취급 주의 등을 나타내는 인식표였다. 뒤에 옷 등에도 쓰였고, 컴퓨터 프로그램 등에도 비슷하게 쓰이게 되었다.
+태그는 옷이나 물건에 상표나 세탁 방법 등을 설명하는 꼬리표이다.
+
+컴퓨터 용어[편집]
+
+태그는 어떠한 항목을 보충 설명하는 낱말 혹은 키워드이다.
+HTML 태그는 HTML 문서를 이루는 문법적 표시이다.
+  
+  html에서의 태그는 html문서를 이루는 문법적 표시이며, 브라우저가 다른 요소로 렌더링하거나 변경하기 위한 기호로 사용된다.
+  현재 html레퍼런스에 작성되어있는 태그는 꽤 많은 숫자이며, 모든 html의 태그를 암기하거나 사용할 수 있다면 좋겠으나
+  자주쓰는 태그들, 그리고 화면구성에 필요한 태그들을 우선 배우기로한다.
+  
+  우선 태그의 종류는 두가지로 분류된다.
+  실제로 보여지지 않는 태그와 보여지는 태그. 또한 보여지는 태그는 두가지 방법으로 나눠진다.
+  
+  <ul>
+    <li>보여지는 않는 태그</li>
+    <li>보여지지 태그
+      <ul>
+        <li>구조적 태그</li>
+        <li>표현적 태그</li>
+      </ul>
+    </li>
+  </ul>
+  
+  우선의 예로 들었던 ul, li는 보여지는 태그중 구조적 태그에 속한다. 
+  
+  보여지지 않는 태그란, html문서 작성시에는 들어가나, 실제 브라우저에서 해석되어 화면에 비춰지는 것이 아닌, 실제 이 문서의
+  정보나 필요한 리소스를 가져오는, 참조역할을 하게된다. &lt;html&gt;, &lt;head&gt;, &lt;body&gt; 와같은 태그들이 있다.
+  
+  보여지는 태그란, 실제 html 문서 작성 후 브라우저에서의 구조나 화면의 색, 디자인들을 결정하는 태그이다.
+  구조적 태그로는 &lt;ul&gt;, &lt;li&gt;, &lt;div&gt;, &lt;table&gt; 등이 있으며, 표현적 태그로는 &lt;strong&gt; &lt;b&gt;
+  등이 있다.
+  
+  
+  우선 보여지지 않는 태그에대해서 알아보자.
+  
+  &lt;html&gt;
+  html 태그. 현재 이 문서가 html작성형식이라는것을 브라우저에게 알려주기 위함.
+  있으나 없으나 똑같다는 말이있으나, 정상적인 html문서를 작성시엔 꼭 선언해주어야한다.
+  모든 태그의 바깥에 있으며, 모든 태그를 감싸야 한다.
+  
+  &lt;head&gt;
+  head태그. 현재 브라우저가 읽고 해석하는 중, 필요한 외부 리로스, 혹은 이 문서의 문자형식을 알려주는 역할의 태그를 
+  이 태그 안에 작성한다. head에 안에 작성되는 태그들은 모두 보여지지 않는 태그이다.
+  
+  &lt;body&gt;
+  body태그. 브라우저가 해석하고 사용자에게 보여줘야할 부분이 여기에 있다. 이 태그에는 대부분 보여지는 태그가 사용된다.
+  
+  
+  
+ 이와같은 태그를 이용해서 문서를 작성해보자.
+ 
+ &lt;html&gt; 
+ &lt;head&gt;
+ &lt;/head&gt;
+ &lt;body&gt; 이 문서는 html 문서입니다.
+ &lt;/body&gt;
+ &lt;/html&gt;
+ 
+ 
+ </div>
+
+ <div id="side">
+ 
+
+<h4>목차</h4>
+  <ol class="number_">
+   
+
+<li>html
+    <ol class="alpha_">
+     <li><a href="./html/index.html"> html 이란?</a></li>
+     <li><a href="./tag.html"> 태그의 종류와 사용
+
+</a></li>
+    
+
+</ol>
+   </li>
+   <li>css</li>
+   <li>javascript</li>
+  </ol>
+
+ </div>
+
+ <div style="clear:both;visibility:hidden"></div>
+</div>
+ <div 
+
+id="ft">
+ </div>
+
+</body>
+
+</html>
